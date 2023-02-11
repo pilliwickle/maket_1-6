@@ -1,0 +1,52 @@
+$white: #FFFFFF;
+$text: #1B1C21;
+$textmiddle: #7E7E82;
+$textback: #B5B6BC;
+$boxshadow: #aba9a9;
+$accent: #41F6D7;
+$accentborder: #D9FFF5;
+$themecolor: #FF3E79;
+$itemborder: #EAEAEA;
+$background: #F8F8F8;
+$hover: #e9e9e9;
+
+.side-menu__sections {
+    padding: 0;
+}
+
+.side-menu__link {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+
+    transition: color 0.2s ease-in-out;
+
+    margin-bottom: 32px;
+}
+
+.side-menu__link:hover {
+    color: $themecolor;
+    background-color:$hover;
+    border-radius: 12px;
+}
+
+.side-menu__item {
+    list-style-type: none; 
+
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 24px;
+}
+
+.side-menu__link--active {
+    color: #7E7E82;
+}
+
+.side-menu__link--active::before {
+    content: url(../img/highlight.svg);
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}

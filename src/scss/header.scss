@@ -1,0 +1,100 @@
+$white: #FFFFFF;
+$text: #1B1C21;
+$textmiddle: #7E7E82;
+$textback: #B5B6BC;
+$boxshadow: #aba9a9;
+$accent: #41F6D7;
+$accentborder: #D9FFF5;
+$themecolor: #FF3E79;
+$itemborder: #EAEAEA;
+$background: #F8F8F8;
+$hover: #e9e9e9;
+
+.header {
+    width: 100%;
+    height: 88px;
+    background-color: $white;
+    border-bottom: 1px solid $accentborder; 
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__call,
+    &__msg,
+    &__profile {
+        display: none;
+    }
+
+    &__open-menu {
+        margin-left: 16px;
+        margin-right: 17px;
+    }
+
+    &__request {
+        margin-left: 16px;
+        margin-right: 0;
+    }
+
+    &__status {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    &__divider--left {
+        display: none;
+    }
+
+    &__divider--right {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+@media (min-width:768px) {
+    .header {
+        &__call,
+        &__msg,
+        &__profile {
+            display: block;
+        }
+
+        &__open-menu {
+            margin-left: 24px;
+        }
+
+        &__call {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        &__msg {
+            margin-left: 16px;
+            margin-right: 0;
+        }
+
+        &__profile {
+            margin-left: 16px;
+            margin-right: 0;
+        }
+
+        &__divider--left {
+            display: block;
+            margin-left: 20px;
+            margin-right: 21px;
+        }
+
+        &__divider--right {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+    }
+}
+
+@media (min-width:1366px) {
+    .header {
+        display: none;
+    }
+}

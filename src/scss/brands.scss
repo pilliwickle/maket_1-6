@@ -1,0 +1,230 @@
+$white: #FFFFFF;
+$text: #1B1C21;
+$textmiddle: #7E7E82;
+$textback: #B5B6BC;
+$boxshadow: #aba9a9;
+$accent: #41F6D7;
+$accentborder: #D9FFF5;
+$themecolor: #FF3E79;
+$itemborder: #EAEAEA;
+$background: #F8F8F8;
+
+.brands {
+    &__header {
+        height: 80px;
+        background: linear-gradient(to right, $background 25%, $white);
+    
+        border-top: 1px solid #D9FFF5;
+        display: flex;
+        align-items: center;
+    }
+
+    &__head {
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: 16px;
+        display: inline-block;
+        width: 288px;
+    }
+}
+
+@media (min-width:768px) {
+    .brands {
+        &__header {
+            height: 56px;
+        }
+
+        &__head {
+            display: block;
+            padding-left: 24px;
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    } 
+}
+
+@media (min-width:1366px) {
+    .brands__head {
+        padding-left: 32px;
+        width: 1046px;
+    }
+}
+
+.swiper1 {
+    height: 116px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.brands {
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 116px;
+        padding: 16px;
+    }
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        min-width: 240px;
+        max-width: 240px;
+        max-height: 72px;
+        background-color:  $white;
+        border-radius: 6px;
+        border: 1px solid $itemborder;
+        box-sizing: border-box;
+    }
+
+    &__logo {
+        margin-left: 16px;
+    }
+
+    &__link {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $themecolor;
+        background-color: transparent;
+        margin-right: 16px;
+        position: relative;
+        transition: all 0.2s ease-in;
+    }
+
+    &__link::after {
+        content: url(../img/arrow.svg);
+        position: absolute;
+        left: 17px;
+        top: 10px;
+    }
+
+    &__more-button, &__less-button {
+        display: none;
+    }
+
+    &__buttons {
+        margin-bottom: 32px;
+    }
+}
+
+.swiper-pagination {
+    top: 100px;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $textback;
+}
+
+
+@media (min-width:768px) {
+    .brands__swiper {
+        height: 200px;
+        overflow: hidden;
+        max-width: 768px;
+        min-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brands__swiper--full {
+        height: 390px;
+    }
+
+    .brands {
+
+        &__wrapper {
+            flex-wrap: wrap;
+            max-width: 770px;
+            padding: 24px;
+        }
+
+        &__slide {
+            min-width: 224px;
+            max-width: 224px;
+            min-height: 72px;
+            max-height: 72px;
+            margin-bottom: 16px;
+            margin-right: 24px;
+        }
+
+        &__slide:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &__link:hover {
+            transform: scale(1.2);
+        }
+
+        &__more-button, &__less-button {
+            display: block;
+            margin-left: 39px;
+        }
+
+        &__buttons {
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .button--hidden {
+        display: none;
+    }
+}
+
+
+.apple {
+    transform: translateY(-3px);
+}
+
+@media (min-width:1366px) {
+    .brands__swiper {
+        min-width: 1046px;
+        max-width: 1046px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brands__swiper--full {
+        height: 300px;
+    }
+
+    .brands {
+        &__wrapper {
+            flex-wrap: wrap;
+            min-width: 1046px;
+            max-width: 1046px;
+            padding: 24px;
+        }
+
+        &__slide:nth-child(3n) {
+            margin-right: 24px;
+        }
+
+        &__slide:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &__buttons {
+            width: 1046px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__buttons {
+            margin-bottom: 50px;
+        }
+    }
+
+}

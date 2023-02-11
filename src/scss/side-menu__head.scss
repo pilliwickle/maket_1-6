@@ -1,0 +1,38 @@
+.side-menu__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 34px;
+}
+
+.side-menu__exit-menu {
+    margin: 23px 17px 23px 16px;
+}
+
+.side-menu__search {
+    margin: 23px 24px 23px auto;
+}
+
+@media (min-width: 768px) {
+    .side-menu__exit-menu {
+        margin-left: 24px;
+    }
+}
+
+@media (min-width:1366px) {
+    .side-menu {
+        &__exit-menu {
+            display: none;
+        }
+
+        &__logo {
+            margin-left: 22px;
+            margin-top: 30px;
+        }
+
+        &__search {
+            margin-top: 35px;
+        }
+    }
+}

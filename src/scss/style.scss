@@ -1,0 +1,48 @@
+@import '../scss/general.scss';
+@import '../scss/button.scss';
+@import '../scss/side-menu.scss';
+@import '../scss/side-menu__head.scss';
+@import '../scss/side-menu__sections.scss';
+@import '../scss/side-menu__bottom.scss';
+@import '../scss/modals.scss';
+@import '../scss/header.scss';
+@import '../scss/button-imgs.scss';
+@import '../scss/header-large.scss';
+@import '../scss/main-nav.scss';
+@import '../scss/more-less-buttons.scss';
+@import '../scss/about.scss';
+@import '../scss/feedback.scss';
+@import '../scss/сallrequest.scss';
+@import '../scss/brands.scss';
+@import '../scss/tech.scss';
+@import '../scss/price.scss';
+@import '../scss/footer.scss';
+
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+      url('../fonts/TTLakes-Regular.woff') format('woff'),
+      url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+      url('../fonts/TTLakes-Bold.woff') format('woff'),
+      url('../fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+      url('../fonts/TTLakes-Medium.woff') format('woff'),
+      url('../fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

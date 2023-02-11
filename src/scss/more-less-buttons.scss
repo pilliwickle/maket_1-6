@@ -1,0 +1,70 @@
+$white: #FFFFFF;
+$text: #1B1C21;
+$textmiddle: #7E7E82;
+$textback: #B5B6BC;
+$boxshadow: #aba9a9;
+$accent: #41F6D7;
+$accentborder: #D9FFF5;
+$themecolor: #FF3E79;
+$itemborder: #EAEAEA;
+$background: #F8F8F8;
+$hover: #e9e9e9;
+
+.about__more-button, 
+.about__less-button,
+.brands__more-button,
+.brands__less-button,
+.tech__more-button,
+.tech__less-button {
+    display: block;
+    font-family: inherit;
+    border: none;
+    background-color: transparent;
+
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+
+    &:hover {
+        background-color:$hover;
+        border-radius: 6px;
+    }
+}
+
+.about__more-button::before {
+    content: url(../img/more-button.svg);
+    margin-right: 17px; 
+}
+
+.about__less-button::before {
+    content: url(../img/less-button.svg);
+    margin-right: 17px; 
+}
+
+.brands__more-button::before {
+    content: url(../img/more-button.svg);
+    margin-right: 17px; 
+}
+
+.brands__less-button::before {
+    content: url(../img/less-button.svg);
+    margin-right: 17px; 
+}
+
+.tech__more-button::before {
+    content: url(../img/more-button.svg);
+    margin-right: 17px; 
+}
+
+.tech__less-button::before {
+    content: url(../img/less-button.svg);
+    margin-right: 17px; 
+}
+
+.more-less--hidden {
+    display: none;
+}
+
+.button--hidden {
+    display: none;
+}

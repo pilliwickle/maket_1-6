@@ -1,0 +1,220 @@
+$white: #FFFFFF;
+$text: #1B1C21;
+$textmiddle: #7E7E82;
+$textback: #B5B6BC;
+$boxshadow: #aba9a9;
+$accent: #41F6D7;
+$accentborder: #D9FFF5;
+$themecolor: #FF3E79;
+$itemborder: #EAEAEA;
+$background: #F8F8F8;
+$hover: #e9e9e9;
+
+.tech {
+    &__header {
+        height: 80px;
+        background: linear-gradient(to right, $background 25%, $white);
+    
+        border-top: 1px solid $accentborder;
+        display: flex;
+        align-items: center;
+    }
+
+    &__head {
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: 16px;
+        display: inline-block;
+        width: 288px;
+    }
+}
+
+@media (min-width:768px) {
+    .tech {
+        &__header {
+            height: 56px;
+        }
+
+        &__head {
+            display: block;
+            padding-left: 24px;
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+}
+
+@media (min-width:1366px) {
+    .tech__head {
+        padding-left: 32px;
+        width: 1046px;
+    }
+}
+
+.tech {
+    &__swiper {
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+
+        margin-bottom: 24px;
+        position: relative;
+    }
+
+    &__wrapper{
+        margin: 16px;
+    }
+
+    &__card-slide {
+        width: 240px;
+        height: 160px;
+
+        padding: 16px;
+        position: relative;
+
+        background-color: $white;
+        border: 1px solid $itemborder;
+        border-radius: 6px;
+    }
+
+    &__card-slide:last-child {
+        margin-right: 24px;
+    }
+
+    &__card-text {
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__card-link {
+        display: block;
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid $themecolor;
+        background-color: transparent;
+        transition: all 0.2s ease-in;
+    }
+
+    &__card-link:hover {
+        transform: scale(1.2);
+    }
+
+    &__card-link::after {
+        content: url(../img/arrow.svg);
+        position: absolute;
+        left: 17px;
+        top: 10px;
+    }
+
+    &__buttons {
+        display: none;
+    }
+}
+
+.tech__pagination {
+    top: 220px;
+}
+
+@media (min-width:768px) {
+    .tech {
+        &__swiper {
+            height: auto;
+            min-width: 720px;
+            max-width: 720px;
+            overflow: visible;
+
+            margin-bottom: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        &__wrapper{
+            margin: 24px 0 0 0;
+            min-width: 720px;
+            height: 170px;
+            overflow: hidden;
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__swiper--full {
+            height: auto;
+        }
+    
+    
+        &__card-slide {
+            max-width: 224px;
+            max-height: 160px;
+            box-sizing: border-box;
+
+            margin-right: 24px;
+            margin-bottom: 24px;
+        }
+
+        &__card-slide:nth-child(3n) {
+            margin-right: 0;
+        }
+    
+        &__card-slide:last-child {
+            margin-right: 0;
+        }
+
+        &__buttons {
+            display: block;
+            width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+            box-sizing: border-box;
+        }
+
+        &__more-button, &__less-button {
+            margin-left: 39px;
+        }
+    }
+}
+
+@media (min-width:1366px) {
+    .tech {
+        &__swiper {
+            min-width: 998px;
+            max-width: 998px;
+        }
+
+        &__wrapper {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            margin-left: 0;
+            margin-right: 0;
+            width: 998px;
+        }
+
+        &__card-slide {
+            margin-right: 32px;
+            min-width: 238,5px;
+        }
+
+        &__card-slide:nth-child(3n) {
+            margin-right: 32px;
+        }
+
+        &__card-slide:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &__buttons {
+            width: 1046px;
+            margin-bottom: 50px;
+        }
+    }
+}
